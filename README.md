@@ -1,19 +1,9 @@
+# Edge Impulse DSP and Inferencing SDK
 
-# Automated Quality Inspector (Edge AI)
-An industrial-grade computer vision solution developed for a HackerRank Hackathon. This project demonstrates the deployment of Machine Learning models on resource-constrained hardware (Microcontrollers) to automate quality control.
+Portable library for digital signal processing and machine learning inferencing. This repository contains the device implementation in C++ for both processing and learning blocks in [Edge Impulse](https://www.edgeimpulse.com).
 
-## 🛠 Tech Stack
-* **Language:** C++
-* **Framework:** TensorFlow Lite Micro
-* **Tooling:** Edge Impulse SDK, CMake
-* **Hardware Target:** ARM Cortex-M Series (MCU)
+[Documentation](https://docs.edgeimpulse.com/reference#inferencing-sdk)
 
-## 🚀 Features
-* **Real-time Inference:** On-device processing for zero-latency defect detection.
-* **Optimized Model:** Uses a quantized TFLite model to fit within limited MCU RAM/Flash.
-* **Industrial Scalability:** Designed for "Edge" deployment where cloud connectivity is unavailable.
+## Develop locally
 
-## 📂 Repository Structure
-* `/tflite-model`: Contains the compiled C++ math for the neural network.
-* `/model-parameters`: Metadata regarding signal processing and model architecture.
-* `/edge-impulse-sdk`: The core libraries required to run inference on hardware.
+If you want to develop locally the easiest is to grab the [example-standalone-inferencing](https://github.com/edgeimpulse/example-standalone-inferencing) (Desktop) or [example-standalone-inferencing-mbed](https://github.com/edgeimpulse/example-standalone-inferencing-mbed) (ST IoT Discovery Kit, f.e. to test CMSIS-DSP / CMSIS-NN integration) example applications, add your Edge Impulse project (use the C++ Library export option), then symlink this repository in.
